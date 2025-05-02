@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | Raíces Artesanas</title>
+    <link rel="icon" href="logos/isologo verde.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header (consistente con index.html) -->
+    <header id="header">
+        <div id="logo">
+            <a href="index.html"><img src="logos/isologo.png" alt="Inicio - Raíces Artesanas" id="logo-img"></a>
+            <span id="slogan">Tradición viva que florece en cada creación</span>
+        </div>
+        <nav id="menu-principal">
+            <ul id="lista-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html" class="active">Catálogo</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Filtros -->
+    <section id="filtros">
+        <h2>Explora nuestro catálogo</h2>
+        <div id="contenedor-filtros">
+            <!-- Filtro por categoría -->
+            <div class="filtro-grupo">
+                <label for="categoria">Categoría:</label>
+                <select id="categoria">
+                    <option value="todas">Todas</option>
+                    <option value="joyeria">Joyería Artesanal</option>
+                    <option value="tejidos">Tejidos</option>
+                    <option value="ceramica">Cerámica</option>
+                    <option value="pintura">Arte y Pintura</option>
+                </select>
+            </div>
+
+            <!-- Filtro por precio -->
+            <div class="filtro-grupo">
+                <label for="precio">Precio:</label>
+                <select id="precio">
+                    <option value="todos">Todos</option>
+                    <option value="0-50000">$0 - $50.000 COP</option>
+                    <option value="50000-100000">$50.000 - $100.000 COP</option>
+                    <option value="100000">Más de $100.000 COP</option>
+                </select>
+            </div>
+
+            <!-- Barra de búsqueda -->
+            <div class="filtro-grupo">
+                <input type="text" id="busqueda" placeholder="Buscar productos...">
+                <button id="boton-buscar">🔍</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo de productos -->
+    <section id="catalogo">
+        <div id="resultados-busqueda">
+            <p>Mostrando <span id="total-productos">12</span> productos</p>
+        </div>
+
+
+        <div id="contenedor-catalogo">
+            <!-- Joyería Artesanal -->
+
+            <!-- Collar Filigrana Real -->
+            <div class="producto-catalogo" data-categoria="joyeria" data-precio="85000">
+                <div class="galeria-imagenes">
+                    <img src="img/collar_filigrana1.jpg" alt="Collar artesanal" class="img-producto" data-imagen="1">
+                    <img src="img/collar_filigrana2.jpg" alt="Collar artesanal" class="img-producto" data-imagen="2">
+                    <img src="img/collar_filigrana3.jpg" alt="Collar artesanal" class="img-producto" data-imagen="3">
+                </div>
+                <div class="imagen-principal">
+                    <img src="img/collar_filigrana1.jpg" alt="Imagen principal producto" id="imagen-principal-producto">
+                </div>
+                <div class="info-producto">
+                    <h3>Collar Filigrana Real</h3>
+                    <p class="precio">$85.000 COP</p>
+                    <p class="artesano">Por: <span>Ana Méndez</span> (Tunja)</p>
+                    <div class="detalles-producto" style="display: none;">
+                        <p><strong>Materiales:</strong> Plata 950, hilo de oro</p>
+                        <p><strong>Técnica:</strong> Filigrana tradicional</p>
+                        <p><strong>Tiempo de elaboración:</strong> 6 días</p>
+                    </div>
+                    <div class="botones-accion">
+                        <button class="boton-comprar">Comprar</button>
+                        <button class="boton-detalles">▼ Detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anillo Sol Andino -->
+            <div class="producto-catalogo" data-categoria="joyeria" data-precio="48000">
+                <div class="galeria-imagenes">
+                    <img src="img/anillo_sol1.jpg" alt="Anillo artesanal" class="img-producto" data-imagen="1">
+                    <img src="img/anillo_sol2.jpg" alt="Anillo artesanal" class="img-producto" data-imagen="2">
+                    <img src="img/anillo_sol3.jpg" alt="Anillo artesanal" class="img-producto" data-imagen="3">
+                </div>
+                <div class="imagen-principal">
+                    <img src="img/anillo_sol1.jpg" alt="Imagen principal producto" id="imagen-principal-producto">
+                </div>
+                <div class="info-producto">
+                    <h3>Anillo Sol Andino</h3>
+                    <p class="precio">$48.000 COP</p>
+                    <p class="artesano">Por: <span>Luis Herrera</span> (Sogamoso)</p>
+                    <div class="detalles-producto" style="display: none;">
+                        <p><strong>Materiales:</strong> Bronce dorado, resina</p>
+                        <p><strong>Técnica:</strong> Repujado y pulido manual</p>
+                        <p><strong>Tiempo de elaboración:</strong> 3 días</p>
+                    </div>
+                    <div class="botones-accion">
+                        <button class="boton-comprar">Comprar</button>
+                        <button class="boton-detalles">▼ Detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Arte y Pintura -->
+
+            <!-- Ilustración El Vuelo -->
+            <div class="producto-catalogo" data-categoria="pintura" data-precio="130000">
+                <div class="galeria-imagenes">
+                    <img src="img/ilustracion_vuelo1.jpg" alt="Ilustración artística" class="img-producto"
+                        data-imagen="1">
+                    <img src="img/ilustracion_vuelo2.jpg" alt="Ilustración artística" class="img-producto"
+                        data-imagen="2">
+                    <img src="img/ilustracion_vuelo3.jpg" alt="Ilustración artística" class="img-producto"
+                        data-imagen="3">
+                </div>
+                <div class="imagen-principal">
+                    <img src="img/ilustracion_vuelo1.jpg" alt="Imagen principal producto"
+                        id="imagen-principal-producto">
+                </div>
+                <div class="info-producto">
+                    <h3>Ilustración El Vuelo</h3>
+                    <p class="precio">$130.000 COP</p>
+                    <p class="artesano">Por: <span>Catalina Ruiz</span> (Paipa)</p>
+                    <div class="detalles-producto" style="display: none;">
+                        <p><strong>Técnica:</strong> Acuarela sobre papel algodón</p>
+                        <p><strong>Dimensiones:</strong> 30x40 cm</p>
+                        <p><strong>Inspiración:</strong> Aves andinas en libertad</p>
+                    </div>
+                    <div class="botones-accion">
+                        <button class="boton-comprar">Comprar</button>
+                        <button class="boton-detalles">▼ Detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuadro Atardecer Boyacense -->
+            <div class="producto-catalogo" data-categoria="pintura" data-precio="190000">
+                <div class="galeria-imagenes">
+                    <img src="img/cuadro_atardecer1.jpg" alt="Cuadro al óleo" class="img-producto" data-imagen="1">
+                    <img src="img/cuadro_atardecer2.jpg" alt="Cuadro al óleo" class="img-producto" data-imagen="2">
+                    <img src="img/cuadro_atardecer3.jpg" alt="Cuadro al óleo" class="img-producto" data-imagen="3">
+                </div>
+                <div class="imagen-principal">
+                    <img src="img/cuadro_atardecer1.jpg" alt="Imagen principal producto" id="imagen-principal-producto">
+                </div>
+                <div class="info-producto">
+                    <h3>Cuadro Atardecer Boyacense</h3>
+                    <p class="precio">$190.000 COP</p>
+                    <p class="artesano">Por: <span>Esteban Silva</span> (Duitama)</p>
+                    <div class="detalles-producto" style="display: none;">
+                        <p><strong>Técnica:</strong> Óleo sobre lienzo</p>
+                        <p><strong>Dimensiones:</strong> 60x40 cm</p>
+                        <p><strong>Inspiración:</strong> Paisaje montañoso al anochecer</p>
+                    </div>
+                    <div class="botones-accion">
+                        <button class="boton-comprar">Comprar</button>
+                        <button class="boton-detalles">▼ Detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tejidos -->
+
+            <!-- Amigurumi Conejito Rosa -->
+            <div class="producto-catalogo" data-categoria="tejidos" data-precio="65000">
+                <div class="galeria-imagenes">
+                    <img src="img/amigurumi_conejo1.jpg" alt="Amigurumi tejido" class="img-producto" data-imagen="1">
+                    <img src="img/amigurumi_conejo2.jpg" alt="Amigurumi tejido" class="img-producto" data-imagen="2">
+                    <img src="img/amigurumi_conejo3.jpg" alt="Amigurumi tejido" class="img-producto" data-imagen="3">
+                </div>
+                <div class="imagen-principal">
+                    <img src="img/amigurumi_conejo1.jpg" alt="Imagen principal producto" id="imagen-principal-producto">
+                </div>
+                <div class="info-producto">
+                    <h3>Amigurumi Conejito Rosa</h3>
+                    <p class="precio">$65.000 COP</p>
+                    <p class="artesano">Por: <span>Viviana Torres</span> (Nobsa)</p>
+                    <div class="detalles-producto" style="display: none;">
+                        <p><strong>Materiales:</strong> Lana antialérgica, relleno de algodón</p>
+                        <p><strong>Medidas:</strong> 25 cm de alto</p>
+                        <p><strong>Lavado:</strong> A mano, agua fría</p>
+                    </div>
+                    <div class="botones-accion">
+                        <button class="boton-comprar">Comprar</button>
+                        <button class="boton-detalles">▼ Detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Canasto Frutal Wayúu -->
+            <div class="producto-catalogo" data-categoria="tejidos" data-precio="80000">
+                <div class="galeria-imagenes">
+                    <img src="img/canasto_wayuu1.jpg" alt="Canasto tejido" class="img-producto" data-imagen="1">
+                    <img src="img/canasto_wayuu2.jpg" alt="Canasto tejido" class="img-producto" data-imagen="2">
+                    <img src="img/canasto_wayuu3.jpg" alt="Canasto tejido" class="img-producto" data-imagen="3">
+                </div>
+                <div class="imagen-principal">
+                    <img src="img/canasto_wayuu1.jpg" alt="Imagen principal producto" id="imagen-principal-producto">
+                </div>
+                <div class="info-producto">
+                    <h3>Canasto Frutal Wayúu</h3>
+                    <p class="precio">$80.000 COP</p>
+                    <p class="artesano">Por: <span>Julio Díaz</span> (Tibasosa)</p>
+                    <div class="detalles-producto" style="display: none;">
+                        <p><strong>Materiales:</strong> Caña flecha, hilos de algodón</p>
+                        <p><strong>Técnica:</strong> Tejido tradicional Wayúu</p>
+                        <p><strong>Uso:</strong> Decoración o almacenamiento</p>
+                    </div>
+                    <div class="botones-accion">
+                        <button class="boton-comprar">Comprar</button>
+                        <button class="boton-detalles">▼ Detalles</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Cerámica -->
+
+            <!-- Vajilla Tierra Viva -->
+            <div class="producto-catalogo" data-categoria="ceramica" data-precio="180000">
+                <div class="galeria-imagenes">
+                    <img src="img/vajilla_tierra1.jpg" alt="Vajilla artesanal" class="img-producto" data-imagen="1">
+                    <img src="img/vajilla_tierra2.jpg" alt="Vajilla artesanal" class="img-producto" data-imagen="2">
+                    <img src="img/vajilla_tierra3.jpg" alt="Vajilla artesanal" class="img-producto" data-imagen="3">
+                </div>
+                <div class="imagen-principal">
+                    <img src="img/vajilla_tierra1.jpg" alt="Imagen principal producto" id="imagen-principal-producto">
+                </div>
+                <div class="info-producto">
+                    <h3>Vajilla Tierra Viva</h3>
+                    <p class="precio">$180.000 COP</p>
+                    <p class="artesano">Por: <span>Gloria Lancheros</span> (Ráquira)</p>
+                    <div class="detalles-producto" style="display: none;">
+                        <p><strong>Materiales:</strong> Barro cocido, esmaltes naturales</p>
+                        <p><strong>Contenido:</strong> 4 platos, 4 pocillos, 4 tazones</p>
+                        <p><strong>Uso:</strong> Vajilla de mesa</p>
+                    </div>
+                    <div class="botones-accion">
+                        <button class="boton-comprar">Comprar</button>
+                        <button class="boton-detalles">▼ Detalles</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Figura El Guardián -->
+            <div class="producto-catalogo" data-categoria="ceramica" data-precio="95000">
+                <div class="galeria-imagenes">
+                    <img src="img/figura_guardian1.jpg" alt="Figura de barro" class="img-producto" data-imagen="1">
+                    <img src="img/figura_guardian2.jpg" alt="Figura de barro" class="img-producto" data-imagen="2">
+                    <img src="img/figura_guardian3.jpg" alt="Figura de barro" class="img-producto" data-imagen="3">
+                </div>
+                <div class="imagen-principal">
+                    <img src="img/figura_guardian1.jpg" alt="Imagen principal producto" id="imagen-principal-producto">
+                </div>
+                <div class="info-producto">
+                    <h3>Figura El Guardián</h3>
+                    <p class="precio">$95.000 COP</p>
+                    <p class="artesano">Por: <span>Andrés Camacho</span> (Tinjacá)</p>
+                    <div class="detalles-producto" style="display: none;">
+                        <p><strong>Materiales:</strong> Barro rojo, pintura acrílica</p>
+                        <p><strong>Altura:</strong> 30 cm</p>
+                        <p><strong>Inspiración:</strong> figuras ancestrales muiscas</p>
+                    </div>
+                    <div class="botones-accion">
+                        <button class="boton-comprar">Comprar</button>
+                        <button class="boton-detalles">▼ Detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mural Naturaleza Viva -->
+            <div class="producto-catalogo" data-categoria="pintura" data-precio="250000">
+                <div class="galeria-imagenes">
+                    <img src="img/mural_naturaleza1.jpg" alt="Mural artesanal pintado a mano" class="img-producto"
+                        data-imagen="1">
+                    <img src="img/mural_naturaleza2.jpg" alt="Mural artesanal pintado a mano" class="img-producto"
+                        data-imagen="2">
+                    <img src="img/mural_naturaleza3.jpg" alt="Mural artesanal pintado a mano" class="img-producto"
+                        data-imagen="3">
+                </div>
+                <div class="imagen-principal">
+                    <img src="img/mural_naturaleza1.jpg" alt="Imagen principal producto" id="imagen-principal-producto">
+                </div>
+                <div class="info-producto">
+                    <h3>Mural Naturaleza Viva</h3>
+                    <p class="precio">$250.000 COP</p>
+                    <p class="artesano">Por: <span>Elena Suárez</span> (Villa de Leyva)</p>
+                    <div class="detalles-producto" style="display: none;">
+                        <p><strong>Materiales:</strong> Pigmentos naturales, cal viva y acrílicos</p>
+                        <p><strong>Técnica:</strong> Pintura mural mixta artesanal</p>
+                        <p><strong>Dimensiones:</strong> 120x90 cm</p>
+                    </div>
+                    <div class="botones-accion">
+                        <button class="boton-comprar">Comprar</button>
+                        <button class="boton-detalles">▼ Detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Set de Utensilios Curvos -->
+            <div class="producto-catalogo" data-categoria="ceramica" data-precio="72000">
+                <div class="galeria-imagenes">
+                    <img src="img/utensilios_curvos1.jpg" alt="Utensilios de cerámica" class="img-producto"
+                        data-imagen="1">
+                    <img src="img/utensilios_curvos2.jpg" alt="Utensilios de cerámica" class="img-producto"
+                        data-imagen="2">
+                    <img src="img/utensilios_curvos3.jpg" alt="Utensilios de cerámica" class="img-producto"
+                        data-imagen="3">
+                </div>
+                <div class="imagen-principal">
+                    <img src="img/utensilios_curvos1.jpg" alt="Imagen principal producto"
+                        id="imagen-principal-producto">
+                </div>
+                <div class="info-producto">
+                    <h3>Set de Utensilios Curvos</h3>
+                    <p class="precio">$72.000 COP</p>
+                    <p class="artesano">Por: <span>Martín Beltrán</span> (Toca)</p>
+                    <div class="detalles-producto" style="display: none;">
+                        <p><strong>Materiales:</strong> Barro cocido, esmalte ecológico</p>
+                        <p><strong>Incluye:</strong> Cucharón, espátula, y cuchara de servir</p>
+                        <p><strong>Tiempo de elaboración:</strong> 4 días</p>
+                    </div>
+                    <div class="botones-accion">
+                        <button class="boton-comprar">Comprar</button>
+                        <button class="boton-detalles">▼ Detalles</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+        </div>
+
+
+
+
+
+    </section>
+
+  
+
+             <!-- Footer: Redes sociales + Contacto -->
+    <footer id="footer">
+        <div id="contenedor-footer">
+            <!-- Isologo (izquierda) -->
+            <div id="footer-izquierda">
+                <img src="logos/isotipo blanco.png" alt="Artesanos de Boyacá" id="isologo-footer">
+                <p id="slogan-footer">Tradición viva que florece en cada creación</p>
+            </div>
+
+            <!-- Redes sociales y enlaces (derecha) -->
+            <div id="footer-derecha">
+                <div id="redes-sociales">
+                    <a href="https://www.facebook.com/profile.php?id=61575829144129"><img src="img/face.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/raices_artesanas19/profilecard/?igsh=cTgwN2JtdXJlaGRp"><img src="img/instagram.png" alt="Instagram"></a>
+                </div>
+                <div id="enlaces-footer">
+                    <a href="contacto.html" class="enlace-footer">Contacto</a>
+                    <a href="terminos.html" class="enlace-footer">Términos</a>
+                    <a href="artesanos.html" class="enlace-footer">Artesanos</a>
+                </div>
+            </div>
+        </div>
+        <p id="copyright">© 2025 Raíces Artesanas. Todos los derechos reservados.</p>
+        <!-- Botón de la flecha -->
+        <button id="scroll-to-top" class="scroll-to-top-btn">
+            <span class="icon">▲</span>
+        </button>
+    </footer>
+
+    <!-- Modal del Carrito (oculto inicialmente) -->
+    <div id="modal-carrito" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar-modal">&times;</span>
+            <h2>Tu Carrito</h2>
+            <div id="items-carrito">
+                <!-- Aquí se agregarán los productos dinámicamente -->
+            </div>
+            <div id="total-carrito">
+                <p>Total: <span>$0</span> COP</p>
+            </div>
+            <button id="boton-pagar" class="boton-comprar">Pagar con PSE</button>
+        </div>
+    </div>
+
+    <!-- Icono flotante del carrito -->
+    <div id="icono-carrito">
+        🛒 <span id="contador-carrito">0</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="catalogo.js"></script>
+</body>
+
+</html>

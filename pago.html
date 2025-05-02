@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceso de Pago | Raíces Artesanas</title>
+    <link rel="icon" href="logos/isologo verde.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <!-- Mismo header que otras páginas -->
+    </header>
+
+    <main id="contenido-pago">
+        <h1>Finalizar Compra</h1>
+        
+        <section id="resumen-compra">
+            <h2>Resumen de tu pedido</h2>
+            <div id="items-resumen"></div>
+            <div id="total-resumen">
+                <p>Total: <span>$0</span> COP</p>
+            </div>
+        </section>
+
+        <section id="datos-envio">
+            <h2>Datos de envío</h2>
+            <form id="formulario-envio">
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" required>
+                </div>
+            </form>
+        </section>
+
+        <section id="metodo-pago">
+            <h2>Método de pago</h2>
+            <div id="contenedor-pse">
+                <button id="boton-confirmar-pago" class="boton-cta">Pagar con PSE</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer: Redes sociales + Contacto -->
+    <footer id="footer">
+        <div id="contenedor-footer">
+            <!-- Isologo (izquierda) -->
+            <div id="footer-izquierda">
+                <img src="logos/isotipo blanco.png" alt="Artesanos de Boyacá" id="isologo-footer">
+                <p id="slogan-footer">Tradición viva que florece en cada creación</p>
+            </div>
+
+            <!-- Redes sociales y enlaces (derecha) -->
+            <div id="footer-derecha">
+                <div id="redes-sociales">
+                    <a href="https://www.facebook.com/profile.php?id=61575829144129"><img src="img/face.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/raices_artesanas19/profilecard/?igsh=cTgwN2JtdXJlaGRp"><img src="img/instagram.png" alt="Instagram"></a>
+                </div>
+                <div id="enlaces-footer">
+                    <a href="contacto.html" class="enlace-footer">Contacto</a>
+                    <a href="terminos.html" class="enlace-footer">Términos</a>
+                    <a href="artesanos.html" class="enlace-footer">Artesanos</a>
+                </div>
+            </div>
+        </div>
+        <p id="copyright">© 2025 Raíces Artesanas. Todos los derechos reservados.</p>
+        
+    </footer>
+
+    <script src="pago.js"></script>
+</body>
+</html>

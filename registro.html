@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Artesano | Raíces Artesanas</title>
+    <link rel="icon" href="logos/isologo verde.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header consistente con el resto del sitio -->
+    <header id="header">
+        <div id="logo">
+            <a href="index.html"><img src="logos/isologo.png" alt="Inicio - Raíces Artesanas" id="logo-img"></a>
+            <span id="slogan">Tradición viva que florece en cada creación</span>
+        </div>
+        <nav id="menu-principal">
+            <ul id="lista-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="registro.html" class="active">Registrarse</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal del registro -->
+    <main id="contenido-registro">
+        <div class="contenedor-registro">
+            <h1>Regístrate como Artesano</h1>
+            <p>Únete a nuestra comunidad y muestra tus creaciones al mundo</p>
+            
+            <form id="formulario-registro" class="formulario-artesano">
+                <div class="seccion-formulario">
+                    <h2>Datos Personales</h2>
+                    <div class="campo-formulario">
+                        <label for="nombre-completo">Nombre completo:</label>
+                        <input type="text" id="nombre-completo" name="nombre-completo" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="documento">Número de documento:</label>
+                        <input type="text" id="documento" name="documento" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="telefono">Teléfono de contacto:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                
+                <div class="seccion-formulario">
+                    <h2>Datos de Ubicación</h2>
+                    <div class="campo-formulario">
+                        <label for="departamento">Departamento:</label>
+                        <select id="departamento" name="departamento" required>
+                            <option value="">Seleccione...</option>
+                            <option value="boyaca">Boyacá</option>
+                            <option value="otro">Otro departamento</option>
+                        </select>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="municipio">Municipio:</label>
+                        <input type="text" id="municipio" name="municipio" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion" required>
+                    </div>
+                </div>
+                
+                <div class="seccion-formulario">
+                    <h2>Información Artesanal</h2>
+                    <div class="campo-formulario">
+                        <label for="tipo-artesania">Tipo de artesanía:</label>
+                        <select id="tipo-artesania" name="tipo-artesania" required>
+                            <option value="">Seleccione...</option>
+                            <option value="joyeria">Joyería Artesanal</option>
+                            <option value="tejidos">Tejidos</option>
+                            <option value="ceramica">Cerámica</option>
+                            <option value="pintura">Arte y Pintura</option>
+                            <option value="otro">Otra</option>
+                        </select>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="especialidad">Especialidad o técnica:</label>
+                        <input type="text" id="especialidad" name="especialidad" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="experiencia">Años de experiencia:</label>
+                        <input type="number" id="experiencia" name="experiencia" min="0" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="historia">Cuéntanos sobre tu trabajo (máx. 500 caracteres):</label>
+                        <textarea id="historia" name="historia" maxlength="500" rows="4"></textarea>
+                    </div>
+                </div>
+                
+                <div class="seccion-formulario">
+                    <h2>Documentos Requeridos</h2>
+                    <div class="campo-formulario">
+                        <label for="foto-perfil">Foto de perfil:</label>
+                        <input type="file" id="foto-perfil" name="foto-perfil" accept="image/*" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="documento-identidad">Documento de identidad (PDF o imagen):</label>
+                        <input type="file" id="documento-identidad" name="documento-identidad" accept=".pdf,.jpg,.jpeg,.png" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="fotos-trabajo">Fotos de tus trabajos (mínimo 3):</label>
+                        <input type="file" id="fotos-trabajo" name="fotos-trabajo" multiple accept="image/*" required>
+                    </div>
+                </div>
+                
+                <div class="campo-formulario terminos">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto los <a href="#" class="enlace-terminos">términos y condiciones</a> y autorizo el tratamiento de mis datos personales</label>
+                </div>
+                
+                <button type="submit" class="boton-cta">Enviar solicitud</button>
+            </form>
+            
+            <div class="info-adicional">
+                <p>¿Ya tienes una cuenta? <a href="#" class="enlace-login">Inicia sesión aquí</a></p>
+                <p>El proceso de verificación puede tardar hasta 3 días hábiles. Te notificaremos por correo electrónico una vez tu perfil sea aprobado.</p>
+            </div>
+        </div>
+    </main>
+
+     <!-- Footer: Redes sociales + Contacto -->
+     <footer id="footer">
+        <div id="contenedor-footer">
+            <!-- Isologo (izquierda) -->
+            <div id="footer-izquierda">
+                <img src="logos/isotipo blanco.png" alt="Artesanos de Boyacá" id="isologo-footer">
+                <p id="slogan-footer">Tradición viva que florece en cada creación</p>
+            </div>
+
+            <!-- Redes sociales y enlaces (derecha) -->
+            <div id="footer-derecha">
+                <div id="redes-sociales">
+                    <a href="https://www.facebook.com/profile.php?id=61575829144129"><img src="img/face.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/raices_artesanas19/profilecard/?igsh=cTgwN2JtdXJlaGRp"><img src="img/instagram.png" alt="Instagram"></a>
+                </div>
+                <div id="enlaces-footer">
+                    <a href="contacto.html" class="enlace-footer">Contacto</a>
+                    <a href="terminos.html" class="enlace-footer">Términos</a>
+                    <a href="artesanos.html" class="enlace-footer">Artesanos</a>
+                </div>
+            </div>
+        </div>
+        <p id="copyright">© 2025 Raíces Artesanas. Todos los derechos reservados.</p>
+        
+    </footer>
+
+    <!-- Scripts -->
+    <script src="registro.js"></script>
+</body>
+</html>
